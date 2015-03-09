@@ -1,0 +1,22 @@
+input {
+    width: 100%;
+    padding: 16px 7px;
+    margin: 5px;
+    border: thin solid #CCC;
+    border-radius: 8px;
+}
+#leadpages-submit-button {
+    background: black;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 9px;
+}
+.required {
+    background: rgb(253, 244, 244);
+    color: #900;
+    font-weight: bold;
+    border: thin solid #900;
+}

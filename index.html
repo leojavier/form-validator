@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Validator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Form -->
+    <div class="row">
+       <div class="col-lg-3 col-lg-offset-4">
+            <h4 class="formTitle">Validation Test</h4>
+            <form class='mktoForm' action='http://pages.tonyrobbins.com/index.php/leadCapture/save' method='post' id="mktoForm_1128" name="mktForm_1234">
+                <input type="text" name="Email" data-type="email" placeholder="Email" autocomplete="off" >
+                <input type="text" name="FirstName" data-type="string" placeholder="First name" autocomplete="off" >
+                <input type="text" name="LastName" data-type="string" placeholder="Last name" autocomplete="off" >
+                <input type="text" name="Phone" data-type="phone" data-optional="true" placeholder="Phone" autocomplete="off" >
+                <input type="hidden" name="returnurl" value="http://businessleadership.tonyrobbins.com/success" />
+                <button id="leadpages-submit-button" onclick="ValidateMe.controller.submit()" type="button">Validate</button>
+            </form>
+        </div>
+    </div>                 
+    <!-- /Form -->
+<link rel="stylesheet" href="styles/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/validator.js"></script>
+<script>
+(function(){
+    ValidateMe.init();
+})();    
+</script>
+</body>
+</html>
