@@ -1,0 +1,246 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #12171a;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+a {
+  color: #00b3d9;
+  text-decoration: none;
+  transition: all 1s;
+}
+a:hover {
+  transition: all 0.3s;
+  color: #FFF;
+}
+h1,
+h2 {
+  font-size: 2.3em;
+  color: #00b3d9;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+p {
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #e8e9ea;
+  line-height: 1.6em;
+}
+i {
+  font-weight: 100;
+}
+strong {
+  color: #e01b6a;
+}
+pre {
+  border: none;
+  border-radius: 0;
+  margin-top: 3em !important;
+  height: 300px;
+}
+.square-button {
+  color: #e8e9ea;
+  border: thin solid #e8e9ea;
+  background: none;
+  display: block;
+  padding: 10px 20px;
+  font-weight: 300;
+  margin: 2em auto;
+  max-width: 300px;
+  transition: all 1s;
+}
+.square-button:hover {
+  transition: all 0.3s;
+  color: #0080bf;
+  border: thin solid #0080bf;
+  text-decoration: none;
+  font-weight: 300;
+}
+nav {
+  padding: 2em;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+#main-navigation {
+  float: right;
+}
+#main-navigation li {
+  display: inline-block;
+  padding: 0 1em;
+}
+#main-navigation a {
+  color: #ff4551;
+}
+#main-navigation a:hover {
+  text-decoration: none;
+}
+#aragonite {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#logo {
+  font-size: 1.6em;
+  color: #00b3d9;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+#logo:hover {
+  text-decoration: none;
+}
+#home {
+  width: 100%;
+  height: 100%;
+}
+.home-container {
+  display: block;
+  text-align: center;
+}
+.home-container p {
+  max-width: 400px;
+  margin: auto;
+}
+#how {
+  background: #FFF;
+  width: 100%;
+  height: 100%;
+}
+.how-title {
+  font-weight: 300;
+  display: block;
+  margin: auto;
+  max-width: 450px;
+}
+.how-square-button {
+  color: #e8e9ea;
+  border: thin solid transparent;
+  background: #ff4551;
+  display: block;
+  padding: 10px 20px;
+  font-weight: 300;
+  margin: 2em auto;
+  max-width: 300px;
+  transition: all 1s;
+  margin-left: 0;
+  text-align: center;
+  max-width: 200px;
+  color: #FFF;
+}
+.how-square-button:hover {
+  transition: all 0.3s;
+  color: #0080bf;
+  border: thin solid #0080bf;
+  text-decoration: none;
+  font-weight: 300;
+}
+.how-square-button:hover {
+  color: #ff4551;
+  border: thin solid #ff4551;
+  background: #FFF;
+}
+.how-paragraph {
+  font-weight: 300;
+  display: block;
+  margin: auto;
+  max-width: 450px;
+  color: #777777;
+}
+.how-form {
+  max-width: 450px;
+  display: block;
+  margin: auto;
+}
+.how-form input {
+  display: block;
+  background: #f2f2f2;
+  color: #000;
+  font-style: italic;
+  font-size: 0.9em;
+  font-weight: 100;
+  padding: 20px;
+  border: none;
+  margin: 5px auto;
+  width: 100%;
+}
+.how-title-strong {
+  color: #00b3d9;
+  display: block;
+}
+#regex {
+  background: #FFF;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.regex-title {
+  font-weight: 300;
+  display: block;
+  margin-left: 20px;
+  position: relative;
+  z-index: 2;
+}
+.regex-paragraph {
+  color: #777777;
+  max-width: 450px;
+  margin-left: 20px;
+  position: relative;
+  z-index: 2;
+}
+.arrow-background {
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 0 solid transparent;
+  border-right: 60px solid #12171a;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#faq {
+  background: #12171a;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#faq strong {
+  color: #FFF;
+  font-weight: 300;
+}
+#faq a {
+  color: #ff4551;
+  font-weight: bold;
+}
+#faq h2 {
+  text-align: left;
+  font-weight: 300;
+  margin-top: 1.5em;
+  font-size: 1.6em;
+}
+.faq-title {
+  font-weight: 300;
+  display: block;
+  text-align: center !important;
+  position: relative;
+  z-index: 2;
+}
+.faq-paragraph {
+  color: #e8e9ea;
+  max-width: 600px;
+  position: relative;
+  z-index: 2;
+}
+@media only screen and (max-width: 480px) {
+  nav {
+    padding: 15px;
+  }
+  #faq h2 {
+    font-size: 1em;
+    line-height: 1.6em;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,301 @@
+﻿@import "variables.less";
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: @dark-green;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: @light-blue;
+    text-decoration: none;
+    transition: all 1s;
+
+    &:hover {
+        transition: all 0.3s;
+        color: #FFF;
+    }
+}
+
+h1, h2 {
+    font-size: @font-xxl;
+    color: @light-blue;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+p {
+    font-size: @font-l;
+    font-weight: 300;
+    color: @light-gray;
+    line-height: 1.6em;
+}
+
+i {
+    font-weight: 100;
+}
+
+strong {
+    color: @pink;
+}
+
+pre {
+    border: none;
+    border-radius: 0;
+    margin-top: 3em !important;
+    height: 300px;
+}
+
+.square-button-mix(@bg: none, @line-color: @light-gray) {
+    color: @light-gray;
+    border: thin solid @line-color;
+    background: @bg;
+    display: block;
+    padding: 10px 20px;
+    font-weight: 300;
+    margin: 2em auto;
+    max-width: 300px;
+    transition: all 1s;
+
+    &:hover {
+        transition: all 0.3s;
+        color: @dark-blue;
+        border: thin solid @dark-blue;
+        text-decoration: none;
+        font-weight: 300;
+    }
+}
+
+.square-button {
+    .square-button-mix();
+}
+
+//----------------
+// Navigation
+//----------------
+
+nav {
+    padding: 2em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#main-navigation {
+    float: right;
+
+    li {
+        display: inline-block;
+        padding: 0 1em;
+    }
+
+    a {
+        color: @light-red;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+//----------------
+// Page Wrapper
+//----------------
+
+#aragonite {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+//----------------
+// Home section
+//----------------
+
+#logo {
+    font-size: @font-xl;
+    color: @light-blue;
+    text-transform: uppercase;
+    font-weight: 300;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+}
+
+.home-container {
+    display: block;
+    text-align: center;
+
+    p {
+        max-width: 400px;
+        margin: auto;
+    }
+}
+
+//----------------
+// How section
+//----------------
+
+#how {
+    background: #FFF;
+    width: 100%;
+    height: 100%;
+}
+
+.how-title {
+    font-weight: 300;
+    display: block;
+    margin: auto;
+    max-width: 450px;
+}
+
+.how-square-button {
+    .square-button-mix(@light-red, transparent);
+    margin-left: 0;
+    text-align: center;
+    max-width: 200px;
+    color: #FFF;
+
+    &:hover {
+        color: @light-red;
+        border: thin solid @light-red;
+        background: #FFF;
+    }
+}
+
+.how-paragraph {
+    font-weight: 300;
+    display: block;
+    margin: auto;
+    max-width: 450px;
+    color: @dark-gray;
+}
+
+.how-form {
+    max-width: 450px;
+    display: block;
+    margin: auto;
+
+    input {
+        display: block;
+        background: #f2f2f2;
+        color: #000;
+        font-style: italic;
+        font-size: @font-l;
+        font-weight: 100;
+        padding: 20px;
+        border: none;
+        margin: 5px auto;
+        width: 100%;
+    }
+}
+
+.how-title-strong {
+    color: @light-blue;
+    display: block;
+}
+
+//----------------
+// Regex section
+//----------------
+
+#regex {
+    background: #FFF;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.regex-title {
+    font-weight: 300;
+    display: block;
+    margin-left: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.regex-paragraph {
+    color: @dark-gray;
+    max-width: 450px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.arrow-background {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-right: 60px solid @dark-green;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+//----------------
+// FAQ section
+//----------------
+
+#faq {
+    background: @dark-green;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    strong {
+        color: #FFF;
+        font-weight: 300;
+    }
+
+    a {
+        color: @light-red;
+        font-weight: bold;
+    }
+
+    h2 {
+        text-align: left;
+        font-weight: 300;
+        margin-top: 1.5em;
+        font-size: @font-xl;
+    }
+}
+
+.faq-title {
+    font-weight: 300;
+    display: block;
+    text-align: center !important;
+    position: relative;
+    z-index: 2;
+}
+
+.faq-paragraph {
+    color: @light-gray;
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 480px) {
+    nav{
+        padding:15px;
+    }
+    #faq {
+        h2 {
+            font-size: 1em;
+            line-height: 1.6em;
+            font-weight: 500;
+        }
+    }
+}

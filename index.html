@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Aragonite</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900,400italic' rel='stylesheet' type='text/css'>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="node_modules/fullpage.js/jquery.fullPage.css" rel="stylesheet" />
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/prism.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="hidden-xs">
+        <a id="logo" href="/">ARAGONITE</a>
+        <ul id="main-navigation" >
+            <li data-menuanchor="homepage"><a href="#homepage"><i class="fa fa-home"></i></a></li>
+            <li data-menuanchor="howpage"><a href="#howpage">How to</a></li>
+            <li data-menuanchor="regexpage"><a href="#regexpage">Regex List</a></li>
+            <li data-menuanchor="faqpage"><a href="#faqpage">FAQ</a></li>
+        </ul>
+    </nav>
+    <div id="aragonite">
+
+        <div id="home" class="section" data-anchor="homepage">
+            <div class="home-container">
+                <div class="container">
+                    <h1>Argonite</h1>
+
+                    <p>
+                        A free lightweight and onobstrusive field
+                        validator that helps you validate
+                        any kind of data before submiting to your server.
+                    </p>
+
+                    <a href="#howpage" class="square-button" data-menuanchor="homepage">DOWNLOAD</a>
+
+                    <p>
+                        <i>Estimated size</i> <strong> 7.6 kb</strong> minified & gzipped. <br />
+                        <a href="#">Github  /  v1.3.2  /</a> <a href="#">Changelog</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="how" class="section" data-anchor="howpage">
+            <div class="container">
+                <h1 class="how-title"><strong class="how-title-strong">Realtime</strong>validation feedback</h1>
+                <p class="how-paragraph">
+                    This is an example of using custom events for navigation. Also it shows how you can customise
+                    widths and inherit option from tablet to mobile.
+
+                    <a href="javascript:void(0)" class="how-square-button">MORE DEMOS</a>
+                </p>
+
+                <form class="how-form" action="#">
+                    <input type="text" value="" placeholder="Type an Email address" />
+                    <input type="text" value="" placeholder="Type any string" />
+                    <input type="text" value="" placeholder="Type a phone number" />
+                </form>
+            </div>
+
+            <div class="code col-lg-4">
+
+<pre class="hidden-xs">
+<code class="language-markup">
+&lt;form class="how-form" action="#">
+        &lt;input type="text" value="" placeholder="Type an Email address" />
+    &lt;input type="text" value="" placeholder="Type any string" />
+    &lt;input type="text" value="" placeholder="Type a phone number" />
+&lt;/form>
+</code>
+</pre>
+            </div>
+            <div class="code col-lg-4">
+<pre class="hidden-xs">
+<code class="language-css">
+p{
+    color:red;
+}
+</code>
+</pre>
+            </div>
+            <div class="code col-lg-4">
+<pre class="hidden-xs">
+<code class="language-javascript">
+var a = 'test';
+</code>
+</pre>
+            </div>
+        </div>
+
+        <div id="regex" class="section" data-anchor="regexpage">
+            <h1 class="regex-title">
+                <strong class="how-title-strong">A custom and constantly growing </strong>
+                Collection of regular expressions
+            </h1>
+            <p class="regex-paragraph">
+                This is an example of using custom events for navigation. Also it shows how you can customise widths and inherit option from tablet to mobile.
+            </p>
+
+            <div class="arrow-background"></div>
+        </div>
+
+        <div id="faq" class="section" data-anchor="regexpage">
+            <h1 class="faq-title">
+                FAQ
+            </h1>
+            <div class="container">
+                <h2>Can i use it for free?</h2>
+                <p class="faq-paragraph">
+                    Yes!  <strong>Aragonite</strong> is an opensource project authored by <a href="#">Leo Javier</a>
+                    and released under an <a href="#">MIT license.</a>
+                </p>
+
+                <h2>Can i ask for a new functionality?</h2>
+                <p class="faq-paragraph">
+                    Yes, you can submit a ticket through Github at any time.
+                    You are welcome to contact me via <a href="#">Email</a> or <a href="#">Twitter</a> for suggestions.
+                </p>
+
+                <h2>What's new in latest release?</h2>
+                <p class="faq-paragraph">
+                    Please take a look of the <a href="#">Changelog.</a>
+                </p>
+
+                <h2>need to validate a field but the pattern doesn’t exist in the regex list?</h2>
+                <p class="faq-paragraph">
+                    Please post a question on stackoverflow and tag it as <a href="#">#aragonite.</a>  The right answer will be added to the
+                    <strong>Regex</strong> List so anyone including yourself can use it again in the future.
+                </p>
+
+                <!--<h2>Compatibility?</h2>
+                <p class="faq-paragraph">
+                </p>-->
+
+            </div>
+        </div>
+
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/fullpage.js/vendors/jquery.easings.min.js"></script>
+    <script src="node_modules/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
+    <script src="node_modules/fullpage.js/jquery.fullPage.js"></script>
+    <script src="js/prism.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#main-navigation, #logo').hide();
+
+            $('#aragonite').fullpage({
+                anchors: ['homepage', 'howpage', 'regexpage', 'faqpage'],
+                css3: true,
+                scrollingSpeed: 1000,
+                menu: '#main-navigation',
+                afterLoad: function (anchorLink, index) {
+                    if (index > 1) {
+                        $('#main-navigation, #logo').show();
+                    } else {
+                        $('#main-navigation, #logo').hide();
+                    }
+                }
+            });
+
+            $('#myTab a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+
+            $('.arrow-background').css('border-top', $(window).height() + 'px solid transparent');
+            $('.arrow-background').css('border-right', $(window).width() + 'px solid #12171a');
+        });
+    </script>
+</body>
+</html>
